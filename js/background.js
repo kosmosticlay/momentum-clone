@@ -28,7 +28,7 @@ function onBackgroundSetting() {
   const chosenImage = chosenSettings.backgroundImage;
   document.querySelector(
     "body"
-  ).style.backgroundImage = `url(img/${chosenImage})`;
+  ).style.backgroundImage = `url(./img/${chosenImage})`;
 
   const chosenFontStyle = chosenSettings.fontStyle;
   document.documentElement.style.setProperty("--font-style", chosenFontStyle);
