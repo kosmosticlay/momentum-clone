@@ -7,9 +7,9 @@ let greeting = document.querySelector(".user-info");
 
 function idChange() {
   if (sex.value === "여") {
-    loginForm.style.background = "url(../img/idcard01.png)";
+    loginForm.style.background = "url(img/idcard01.png)";
   } else if (sex.value === "남") {
-    loginForm.style.background = "url(../img/idcard02.png)";
+    loginForm.style.background = "url(img/idcard02.png)";
   }
 }
 
