@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Daily Board</title>
+  </head>
+  <body>
+    <div class="login-wrap">
+      <form id="login-form">
+        <div class="login-info-wrap">
+          <div class="univ">노마드 대학교 / Nomad University</div>
+          <div class="student-sex">
+            <span>학생 성별 : </span>
+            <select name="sex" id="">
+              <option value="">성별선택</option>
+              <option value="남">남</option>
+              <option value="여">여</option>
+            </select>
+          </div>
+          <div class="student-name">
+            <label for="login-input">학생 이름 : </label>
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="아이디를 입력하세요."
+              id="login-input"
+            />
+            <button>교실 입장</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="body-wrap">
+      <header class="header">
+        <div class="quote">
+          <div class="quote__title">
+            <span>오늘의 급훈</span>
+          </div>
+          <div class="quote__content">
+            <span class="quote__content__text"
+              >시도해 보지 않고는 누구도 자신이 얼마만큼 해낼 수 있는지 알지
+              못한다.</span
+            >
+            <span class="quote__content__author"> - 푸블릴리우스 시루스 -</span>
+          </div>
+        </div>
+        <div class="background-switch">
+          <div class="background-switch__btn"></div>
+          <div class="background-switch__btn"></div>
+          <div class="background-switch__btn"></div>
+        </div>
+      </header>
+      <main>
+        <section class="today-info">
+          <div class="today-user">
+            <div class="user-info">오늘 당번 :</div>
+            <span>X</span>
+          </div>
+          <div class="clock"></div>
+          <div class="date"></div>
+          <div class="location"></div>
+          <div class="weather"></div>
+          <div class="asmr"><div id="player"></div></div>
+          <div class="search-bar">
+            <form action="https://www.google.co.kr/search" target="_blank">
+              <div class="search">
+                <i class="fa-brands fa-google"></i>
+                <input
+                  type="text"
+                  name="query"
+                  placeholder="검색어를 입력하세요."
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="todos">
+          <form class="todo-form">
+            <i class="fa-solid fa-plus fa-lg"></i>
+            <input class="todo-form__input" type="text" name="" />
+          </form>
+          <div class="todo-list">
+            <div class="todo-list__title">
+              <span> * 오늘 할 일 :</span>
+            </div>
+            <ul class="todo-list__todos"></ul>
+          </div>
+          <div class="todo-sites">
+            <ul class="todo-sites__list">
+              <li>
+                <a href="https://nomadcoders.co/" target="_blank"
+                  ><img src="./img/logoNomad.png" alt="" /></a
+                ><span>노마드코더</span>
+              </li>
+              <li>
+                <a href="https://www.inflearn.com/" target="_blank"
+                  ><img src="./img/logoInflearn.png" alt="" /></a
+                ><span>인프런</span>
+              </li>
+              <li>
+                <a href="https://www.udemy.com/" target="_blank"
+                  ><img src="./img/logoUdemy.png" alt="" /></a
+                ><span>Udemy</span>
+              </li>
+              <li>
+                <a href="https://chat.openai.com/" target="_blank"
+                  ><img src="./img/logoChatGPT.png" alt="" /></a
+                ><span>ChatGPT</span>
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ko/" target="_blank"
+                  ><img src="./img/logoMDN.png" alt="" /></a
+                ><span>MDN</span>
+              </li>
+              <li>
+                <a href="https://ko.javascript.info/" target="_blank"
+                  ><img src="./img/logoDive.png" alt="" /></a
+                ><span>모딥다</span>
+              </li>
+              <li>
+                <a href="https://poiemaweb.com/" target="_blank"
+                  ><img src="./img/logoPoiema.png" alt="" /></a
+                ><span>Poiema</span>
+              </li>
+              <li>
+                <a
+                  href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+                  target="_blank"
+                  ><img src="./img/logoJSAlgo.png" alt="" /></a
+                ><span>JS Algorithm</span>
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank"
+                  ><i class="fa-brands fa-github fa-2x"></i></a
+                ><span>Github</span>
+              </li>
+              <li>
+                <a href="https://replit.com/" target="_blank"
+                  ><img src="./img/logoReplit.png" alt="" /></a
+                ><span>Replit</span>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><img src="./img/logoYoutube.png" alt="" /></a
+                ><span>Youtube</span>
+              </li>
+              <li>
+                <a href="https://www.canva.com/" target="_blank"
+                  ><img src="./img/logoCanva.png" alt="" /></a
+                ><span>Canva</span>
+              </li>
+              <li>
+                <a href="https://fontawesome.com/" target="_blank"
+                  ><img src="./img/logoFontawesome.png" alt="" /></a
+                ><span>Fontawesome</span>
+              </li>
+              <li>
+                <a href="https://www.pinterest.co.kr/" target="_blank"
+                  ><img src="./img/logoPinterest.png" alt="" /></a
+                ><span>Pinterest</span>
+              </li>
+              <li>
+                <a href="https://dribbble.com/shots" target="_blank"
+                  ><img src="./img/logoDribble.png" alt="" /></a
+                ><span>dribble</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="timer-info">
+          <div class="timer">
+            <div class="mask"></div>
+          </div>
+          <form class="set-time">
+            <div class="set-time__column-list">
+              <div class="set-time__column">
+                <input
+                  type="text"
+                  name=""
+                  class="set-time__input hours"
+                  value="0"
+                /><span>시간</span>
+              </div>
+              <div class="set-time__column">
+                <input
+                  type="text"
+                  name=""
+                  class="set-time__input minutes"
+                  value="0"
+                /><span>분</span>
+              </div>
+              <div class="set-time__column">
+                <input
+                  type="text"
+                  name=""
+                  class="set-time__input seconds"
+                  value="0"
+                /><span>초</span>
+              </div>
+            </div>
+            <!-- 결과값은 string -->
+            <div class="set-time__info">
+              <span class="timer-setting">세팅시간 : 0시간 0분 0초</span>
+              <div class="button-list">
+                <div class="button-list__sets">
+                  <button class="set">SET</button>
+                  <button class="reset">RESET</button>
+                </div>
+                <div class="button-list__controls">
+                  <button class="restart">RESTART</button>
+                  <button class="start">START</button>
+                  <button class="stop">STOP</button>
+                </div>
+                <a href="#" class="how-to-use">📋타이머 사용방법</a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <div class="how-to-use-popup">
+      <div class="popup__title">📋타이머 사용방법</div>
+      <div class="popup__instruction">
+        <div class="popup__instruction__title">* 초기 세팅 *</div>
+        <p class="popup__instruction__text">
+          ① 원하는 시간을 입력 후 SET 버튼을 누른다. <br />(세팅시간 텍스트로
+          시간 확인 가능)<br />
+          ② START 버튼을 누르면 타이머가 작동을 시작한다.<br />
+          ③ STOP 버튼으로 타이머를 일시정지할 수 있다.<br />
+          (STAET버튼을 누르면 일시정지한 지점에서 다시 작동한다.)<br />
+          ④ RESTART 버튼으로 세팅된 시간의 타이머를 다시 시작할 수 있다.
+          <br /><br />
+        </p>
+        <div class="popup__instruction__title">* 세팅시간 변경 *</div>
+        <p class="popup__instruction__text">
+          ① RESET 버튼으로 세팅시간을 초기화 한다. <br />(RESET버튼을 누르지
+          않고 시간을 변경하면 정상적으로 작동하지 않는다.) <br />② '초기
+          세팅'과 같은 방식으로 타이머 시간을 설정한다.
+        </p>
+      </div>
+      <div class="popup__close">닫기 X</div>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/asmr.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/popup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3e809e2e54.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
