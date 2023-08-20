@@ -1,6 +1,6 @@
 const backgroundSettings = [
   {
-    backgroundImage: "background01.png",
+    backgroundImage: "../img/background01.png",
     fontStyle: "HakgyoansimBunpilR",
     fontMainColor: "white",
     fontSubColor: "black",
@@ -26,9 +26,7 @@ let chosenSettings =
 
 function onBackgroundSetting() {
   const chosenImage = chosenSettings.backgroundImage;
-  document.querySelector(
-    "body"
-  ).style.backgroundImage = `url(img/${chosenImage})`;
+  document.querySelector("body").style.backgroundImage = `url(${chosenImage})`;
 
   const chosenFontStyle = chosenSettings.fontStyle;
   document.documentElement.style.setProperty("--font-style", chosenFontStyle);
