@@ -5,6 +5,7 @@ const loginWrap = document.querySelector(".login-wrap");
 const loginForm = document.querySelector("#login-form");
 let greeting = document.querySelector(".user-info");
 
+/* 성별에 따라 학생증 디자인 변경 */
 function idChange() {
   if (sex.value === "여") {
     loginForm.style.background = "url(img/idcard01.png)";
@@ -16,7 +17,6 @@ function idChange() {
 sex.addEventListener("change", idChange);
 
 /* login 구현 */
-
 function onLoginSubmit(event) {
   event.preventDefault();
   const loginInput = document.querySelector("#login-input");

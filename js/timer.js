@@ -1,5 +1,8 @@
+/* timer diagram */
 const timer = document.querySelector(".timer");
 const mask = document.querySelector(".mask");
+
+/* timer settings */
 const setTimerForm = document.querySelector(".set-time");
 const setHoursInput = document.querySelector(".set-time__input.hours");
 const setMinutesInput = document.querySelector(".set-time__input.minutes");
@@ -53,15 +56,11 @@ function startTimer() {
 }
 
 function initialization() {
-  // 애니메이션 상태를 paused로 설정합니다.
   timer.style.animationPlayState = "paused";
   mask.style.animationPlayState = "paused";
-
-  // 애니메이션 속성들을 초기 상태로 되돌립니다.
   timer.style.animation = "none";
   mask.style.animation = "none";
 
-  // 잠시 후 원래의 애니메이션 설정을 되돌립니다. 이렇게 하면 애니메이션의 현재 진행 상태가 초기 상태로 되돌아갑니다.
   setTimeout(() => {
     timer.style.animation = "";
     mask.style.animation = "";

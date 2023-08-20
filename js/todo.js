@@ -24,7 +24,6 @@ function paintToDo(newTodo) {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
 
-  // checkbox 클릭 이벤트 추가
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
       span.style.textDecorationLine = "line-through";
